@@ -24,6 +24,7 @@ header {
     display:flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
 }
 
 .image-container img {
@@ -36,11 +37,17 @@ h1 {margin-bottom: -10px;}
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.header-links li {
+/* .header-links li {
     margin-right: 10%;
+} */
+
+.header-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 nav {
@@ -60,18 +67,86 @@ header nav ul {
 header nav ul li {
    white-space: nowrap;
    display: flex;
-   position: relative;
+  /* position: relative;
    left: -500px;
-   bottom: 50px;
-   margin: 50px 20px;
+   bottom: 50px; */
+   margin: 50px 50px;
+   text-align: center;
+}
+
+.about-me-section {
+    display: flex;
 }
 
 .about-me-left {
     background-color: rgb(148, 215, 254);
     border: solid 4px darkblue;
     border-radius: 20px;
-    font-size: 40px;
+    font-size: 30px;
     padding: 50px;
-    margin: 20px 0px;
+    margin: 20px 20px 0px 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.about-me-right {
+    background-color: rgb(148, 215, 254);
+    border: solid 4px darkblue;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 50px;
+    margin: 20px 0px 0px 0px;
     display: inline-block;
+    width: calc(100% - 380px);
+}
+
+.projects-section {
+    display: flex;
+}
+
+.projects-left {
+    background-color: rgb(148, 215, 254);
+    border: solid 4px darkblue;
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 50px;
+    margin: 20px 20px 0px 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.projects-right {
+    background-color: rgb(148, 215, 254);
+    border: solid 4px darkblue;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 50px;
+    margin: 20px 0px 0px 0px;
+    display: inline-flex;
+    width: calc(100% - 380px);
+}
+
+.horiseon {
+    height: 200px;
+    width: auto;
+}
+
+.horiseon-description {
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 680px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    .projects-right {
+        flex-direction: column;
+    }
 }
