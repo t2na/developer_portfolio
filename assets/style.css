@@ -1,0 +1,77 @@
+* {
+    font-family: 'Segoe UI', 'Roboto Slab', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.image-container {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+border: 4px solid darkblue;
+padding: 8px lightblue;
+box-sizing: border-box;
+background-color: lightblue;
+}
+
+header {
+    background-color: rgb(148, 215, 254);
+    border: solid 4px darkblue;
+    border-radius: 20px;
+    font-family: 'Segoe UI', 'Roboto Slab', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.name-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {margin-bottom: -10px;}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-links li {
+    margin-right: 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    align-items: center;
+}
+
+header nav ul li {
+   white-space: nowrap;
+   display: flex;
+   position: relative;
+   left: -500px;
+   bottom: 50px;
+   margin: 50px 20px;
+}
+
+.about-me-left {
+    background-color: rgb(148, 215, 254);
+    border: solid 4px darkblue;
+    border-radius: 20px;
+    font-size: 40px;
+    padding: 50px;
+    margin: 20px 0px;
+    display: inline-block;
+}
