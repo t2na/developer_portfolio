@@ -83,7 +83,7 @@ header nav ul li {
     border: solid 4px darkblue;
     border-radius: 20px;
     font-size: 30px;
-    padding: 50px;
+    padding: 40px;
     margin: 20px 20px 0px 0px;
     display: flex;
     text-align: center;
@@ -130,6 +130,7 @@ header nav ul li {
     margin: 20px 0px 0px 0px;
     display: inline-flex;
     width: calc(100% - 380px);
+    align-items: center;
 }
 
 .horiseon {
@@ -160,21 +161,38 @@ footer img {
     width: auto;
 }
 
+.linkedin-logo {
+    justify-content: center;
+}
+
 .footer-img-wrapper {
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
 .footer-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 840px) {
     header nav ul {
         flex-direction: column;
     }
+    .about-me-right {
+        min-width: 340px;
+    }
+    header {
+        min-width: 725px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .projects-right {
         flex-direction: column;
+        min-width: 340px;
     }
+
 }
