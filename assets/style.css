@@ -135,12 +135,40 @@ header nav ul li {
 .horiseon {
     height: 200px;
     width: auto;
+    border: solid 4px darkblue;
+    border-radius: 20px;
 }
 
 .horiseon-description {
     margin-left: 20px;
 }
 
+footer {
+    background-color: rgb(148, 215, 254);
+    border: solid 4px darkblue;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', 'Roboto Slab', 'Helvetica Neue', Arial, sans-serif;
+}
+
+footer div {
+    margin: 20px 20px 20px 20px;
+}
+
+footer img {
+    height: 20px;
+    width: auto;
+}
+
+.footer-img-wrapper {
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
 
 @media screen and (max-width: 680px) {
     header nav ul {
